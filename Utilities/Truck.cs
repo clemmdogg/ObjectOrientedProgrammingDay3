@@ -17,7 +17,7 @@ namespace ObjectOrientedProgrammingDay3.Utilities
             bool isNeedingInspection = false;
 
             if (DateTime.Now > new DateTime(LastInspection.Year + 1, LastInspection.Month, LastInspection.Day) &&
-                DateTime.Now > new DateTime(ProductionDate.Year + 1, LastInspection.Month, LastInspection.Day))
+                DateTime.Now > new DateTime(ProductionDate.Year + 1, ProductionDate.Month, ProductionDate.Day))
             {
                 isNeedingInspection = true;
             }
