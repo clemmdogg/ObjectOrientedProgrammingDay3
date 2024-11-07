@@ -27,6 +27,11 @@ namespace ObjectOrientedProgrammingDay3.Utilities
         {
             Console.WriteLine($"Truck: {Brand} {Model}");
         }
+        public override void SetTireType(bool isWinterTire)
+        {
+            if (isWinterTire) { this.MaxRimSize = 17; }
+            else { this.MaxRimSize = 20; }
+        }
     }
 }
 
